@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/item_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@id/item_gallery"
+        android:background="@drawable/gradiant" />
+
+    <TextView
+        android:id="@+id/textviewUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/item_gallery"
+        android:layout_margin="8dp"
+        android:drawablePadding="4dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="#fff"
+        app:drawableStartCompat="@drawable/ic_user"
+        tools:text="username" />
+
+    <TextView
+        android:id="@+id/textviewlikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:drawableStartCompat="@drawable/heart"
+        android:layout_alignBottom="@id/item_gallery"
+        android:layout_alignEnd="@id/item_gallery"
+        android:text="20"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"/>
+
+</RelativeLayout>
